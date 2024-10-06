@@ -52,7 +52,7 @@
 	<div id="testingDiv">
 
 		<button type="button" onclick="fetchd6()">Fetch d6</button>
-		<div id="fetch-2plus2-result"></div>
+		<div id="fetch-d6-result"></div>
 		<br><br>
 
 		
@@ -61,7 +61,7 @@
 
 		<script>
 			let fetchd6Counter = 0
-			async function fetch2Plus2() {
+			async function fetchd6() {
 				fetchd6Counter++
 				const url = document.getElementById("urlInput").value + "/d6";
 				const response = await fetch(url)
